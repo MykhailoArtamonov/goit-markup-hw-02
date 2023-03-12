@@ -1,0 +1,116 @@
+:root {
+  --primary-text-color: #434455;
+  --secondary-text: #fff;
+  --primary-brand: #4d5ae5;
+  --success: #31d0aa;
+  --dark: #2e2f42;
+  --subtle-text: #8e8f99;
+  --accent: #e7e9fc;
+  --light: #f4f4fd;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--primary-text);
+  font-weight: regular;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 2%;
+}
+
+/*без глобальных селекторов не обойтись ¯\_( ͡❛ ͜ʖ ͡❛)_/¯ */
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-family: raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17%;
+  letter-spacing: 3%;
+  color: var(--dark);
+}
+
+.logo-web {
+  color: var(--primary-brand);
+}
+
+.title-header {
+  font-weight: semibold;
+  font-size: 56;
+  line-height: 60px;
+}
+.nav-a {
+  font-weight: 600;
+  color: var(--dark);
+}
+.nav-a:hover {
+  color: var(--primary-text);
+}
+
+.nav-a:active {
+  color: var(--primary-brand);
+}
+.address-a {
+  font-style: normal;
+  color: var(--primary-text);
+}
+
+/* футер все равно один на страние + одинаковый между ними ¯\_( ͡❛ ͜ʖ ͡❛)_/¯ */
+
+footer {
+  background-color: var(--dark);
+}
+
+.logo-bottom {
+  color: var(--secondary-text);
+}
+.footer-p {
+  color: var(---secondary-text);
+}
+
+.title-section {
+  background-color: var(--dark);
+  text-align: center;
+}
+.title-h {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  color: var(--secondary-text);
+}
+.title-button {
+  background-color: var(--primary-brand);
+  font-weight: 500;
+  letter-spacing: 4%;
+  color: var(--secondary-text);
+  vertical-align: center;
+}
+.tertiary-h {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #2e2f42;
+}
+.secondary-h {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+}
+.team-section {
+  background-color: var(--light);
+}
+
+.team-li :not(img) {
+  text-align: center;
+}
+
+.li-button {
+  cursor: pointer;
+}
