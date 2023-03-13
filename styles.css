@@ -1,7 +1,8 @@
 :root {
-  --primary-text-color: #434455;
+  --primary-text: #434455;
   --secondary-text: #fff;
   --primary-brand: #4d5ae5;
+  --active-buttons: #404bbf;
   --success: #31d0aa;
   --dark: #2e2f42;
   --subtle-text: #8e8f99;
@@ -12,10 +13,10 @@
 body {
   font-family: Roboto, sans-serif;
   color: var(--primary-text);
-  font-weight: regular;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
 }
 
 /*без глобальных селекторов не обойтись ¯\_( ͡❛ ͜ʖ ͡❛)_/¯ */
@@ -31,8 +32,8 @@ a {
   font-family: raleway, sans-serif;
   font-size: 18px;
   font-weight: 800;
-  line-height: 1.17%;
-  letter-spacing: 3%;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   color: var(--dark);
 }
 
@@ -46,10 +47,11 @@ a {
   line-height: 60px;
 }
 .nav-a {
-  font-weight: 600;
+  font-weight: 500;
   color: var(--dark);
 }
-.nav-a:hover {
+.nav-a:hover,
+:focus {
   color: var(--primary-text);
 }
 
@@ -79,26 +81,30 @@ footer {
   text-align: center;
 }
 .title-h {
-  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   color: var(--secondary-text);
 }
-.title-button {
+.buttons {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
   background-color: var(--primary-brand);
   font-weight: 500;
-  letter-spacing: 4%;
+  letter-spacing: 0.04em;
   color: var(--secondary-text);
-  vertical-align: center;
+  cursor: pointer;
+}
+.buttons:active {
+  background-color: var(--active-buttons);
 }
 .tertiary-h {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: #2e2f42;
+  color: var(--dark);
 }
 .secondary-h {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
   text-align: center;
@@ -109,8 +115,4 @@ footer {
 
 .team-li :not(img) {
   text-align: center;
-}
-
-.li-button {
-  cursor: pointer;
 }
