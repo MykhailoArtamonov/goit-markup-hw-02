@@ -41,7 +41,7 @@ a {
   color: var(--primary-brand);
 }
 
-.title-header {
+.header-title {
   font-weight: semibold;
   font-size: 56;
   line-height: 60px;
@@ -73,7 +73,7 @@ footer {
   color: var(--secondary-text);
 }
 .footer-p {
-  color: var(---secondary-text);
+  color: var(--secondary-text);
 }
 
 .title-section {
